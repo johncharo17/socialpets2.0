@@ -83,7 +83,6 @@ header a:hover{
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    color: white;
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
@@ -93,6 +92,10 @@ header a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+#hero button{
+    font-size: 1.75em;
 }
 
 #hero h1{
@@ -115,7 +118,8 @@ header a:hover{
 }
 
 #RecienLlegados h2{
-    padding-top: 0;
+    margin-top: 0;
+    font-size: 4em;
 }
 
 #RecienLlegados p{
@@ -129,6 +133,7 @@ header a:hover{
     padding: 50px;
     margin: 20px;
     border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
 
 .carta:first-child{
@@ -157,3 +162,152 @@ header a:hover{
     )
     ,url("imagenes/Adoptado3.jfif");
 }
+
+#dudas .container{
+    text-align: center; 
+    padding: 250px 12px; 
+}
+
+#dudas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#adoptaYa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 80vh;
+    background-color: rgb(30, 30, 30);
+    }
+
+#adoptaYa h2{
+    font-size: 9vw;
+}
+
+#adoptaYa button{
+    font-size: 5vw;
+    border-radius: 25px;
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer.container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #somos-SocialPets .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-SocialPets .texto{
+        padding: 0px 30px;
+        max-width: 600px;
+        width: 50%;
+        text-align: initial;
+        padding-left: 30px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos.SocialPets h2{
+        margin-top: 0px;
+    }
+
+    #somos-SocialPets .img-container{
+        background-image: url("imagenes/SomosSocialPets.jpg");
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+
+        }
+
+        #RecienLlegados .programas{
+            display: flex;
+            justify-content: center;
+        }
+
+        #RecienLlegados p{
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        #RecienLlegados h3{
+            margin-top: 0;
+        }
+
+        #RecienLlegados .carta{
+            padding: 50px;
+        }
+
+        #dudas{
+            background-image: url(imagenes/logo.png);
+            background-repeat: no-repeat;
+            background-size: 500px 400px;
+            background-position: calc(100vw - 500px) 120px;
+        }
+
+        #dudas .container{
+            text-align: initial;
+        }
+
+        #dudas ul{
+            margin-left: 100px;
+        }
+
+        #adoptaYa h2{
+            font-size: 5em;
+        }
+        #adoptaYa button{
+            font-size: 2em;
+        }
+
+        #footer .container{
+            justify-content: flex-end;
+        }
+}
+
+@media (min-width: 1200px) {
+    #dudas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
+    
