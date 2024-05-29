@@ -102,6 +102,10 @@ header a:hover{
     color: white;
 }
 
+#hero button{
+    font-size: 1.75em;
+}
+
 #somos-SocialPets .container{
     text-align: center;
     padding: 200px 12px;
@@ -118,8 +122,8 @@ header a:hover{
 }
 
 #RecienLlegados h2{
-    margin-top: 0;
-    font-size: 4em;
+    padding-top: 0;
+    font-size: 3.2em;
 }
 
 #RecienLlegados p{
@@ -164,12 +168,12 @@ header a:hover{
 }
 
 #dudas .container{
-    text-align: center; 
-    padding: 250px 12px; 
+    text-align: center;
+    padding: 250px 12px;
 }
 
 #dudas li{
-    margin: 16px 0px;
+    margin: 15px 0px;
     font-weight: bold;
 }
 
